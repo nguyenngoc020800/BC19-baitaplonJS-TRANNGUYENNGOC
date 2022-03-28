@@ -17,13 +17,13 @@ html>body{
     display: flex;
     align-items: center;
 }
-.main-card{
+.main-cart{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.main-card .card{
+.main-cart .card{
     width:200px ;
     height: 300px;
     margin: 20px;
