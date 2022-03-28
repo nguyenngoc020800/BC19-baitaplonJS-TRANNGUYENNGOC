@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin:0;
+}
+html>body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+}
+.banner{
+    display: flex;
+    align-items: center;
+}
+.main-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.main-card .card{
+    width:200px ;
+    height: 300px;
+    margin: 20px;
+    background-color: black !important;
+    overflow: hidden;
+    border-radius: 20px !important;
+    transition: all ease-in .2s;
+}
+
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+.card-top i{
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+}
+
+.card-top span{
+    display: inline-block;
+    color: lightgreen;
+}
+
+img.card-img{
+    padding: 56px 0;
+}
+.card-body{
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 20px;
+    background-color: #333;
+    position: relative;
+}
+
+.card-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-text{
+    font-size: 13px;
+    
+}
+
+.card-decr{
+    font-size: 14px;
+    line-height: 15px;
+    display: block;
+}
+
+.card-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-card .card:hover{
+    width: 260px;
+    height: 460px;
+}
+
+.icon{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.icon i{
+    font-size: 20px;
+}
