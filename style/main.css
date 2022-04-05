@@ -6,24 +6,39 @@ html>body{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.app{
+#app{
     display: flex;
     justify-content: center;
     max-width: 100%;
     margin: 0 auto;
     min-height: 500px;
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    position: relative;
+}
+
+#filterType{
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    z-index: 10;
+}
+#typeSelect{
+    padding: 10px;
+    border-radius: 20px;
 }
 .banner{
     display: flex;
     align-items: center;
+    width: 1300px;
+    padding-top:30px;
 }
-.main-cart{
+.main-card{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.main-cart .card{
+.main-card .card{
     width:200px ;
     height: 300px;
     margin: 20px;
@@ -51,7 +66,7 @@ html>body{
 }
 
 img.card-img{
-    padding: 56px 0;
+    padding: 10px;
 }
 .card-body{
     color: #fff;
