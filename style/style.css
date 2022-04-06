@@ -13,7 +13,7 @@ html {
 }
 .banner {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 button {
     border: none;
@@ -44,12 +44,14 @@ h2 {
 
 /* Nav bar */
 .banner .cover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(5px);
     display: none;
+    top: 0;
+    right: 0;
 }
 
 .nav {
@@ -85,25 +87,27 @@ h2 {
 /* End of Nav bar */
 
 /* Cart */
-.side-nav {
+
+.cart{
     position: absolute;
+    width: 60%;
+    height: 100vh;
+    top: 0;
+    z-index: 10;
+    right: -100%;
+    /* overflow: hidden; */
+    transition: 0.5s;
+    
+}
+.side-nav {
     background: #010101;
     opacity: 0.95;
-    height: 100%;
-    width: 60%;
     flex-direction: column;
-    top: 0;
-    right: -100%;
-    z-index: 10;
-    
-    overflow: hidden;
-    transition: 0.5s;
+    display: flex;
+    padding: 20px;
 }
 
 .side-nav .fa-times {
-    position: absolute;
-    top: 20px;
-    right: 30px;
     font-size: 1.5rem;
 
 }
@@ -114,12 +118,13 @@ h2 {
     font-weight: 600;
 }
 .side-nav .cart-items {
-    position: absolute;
+    /* position: absolute; */
     width: 90%;
     margin: 0 5%;
-    height: 50%;
-    top: 10%;
-    flex-direction: column;
+    height: 60vh;
+    overflow-y: scroll;
+    /* top: 10%; */
+    /* flex-direction: column; */
 }
 .side-nav .cart-items .empty-cart {
     margin: auto 0;
@@ -129,10 +134,11 @@ h2 {
     color: rgba(255, 255, 255, 0.25);
 }
 .side-nav .final {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
     align-self: flex-end;
     flex-direction: column;
-    bottom: 10%;
+    /* bottom: 10%; */
 }
 .side-nav .final strong {
     align-self: flex-end;
@@ -142,6 +148,7 @@ h2 {
     margin-bottom: 1rem;
 }
 .side-nav .final .action {
+    display: flex;
     justify-content: space-evenly;
 }
 .side-nav .final .action .btn {

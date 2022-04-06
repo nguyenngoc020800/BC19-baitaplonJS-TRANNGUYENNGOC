@@ -4,7 +4,9 @@ import "./_layout";
 import axios from "axios";
 import Product from "./_product";
 import ProductManager from "./_productManager";
+import CartManager from "./_cartManager";
 const productList = new ProductManager();
+const cartList = new CartManager();
 init();
 // lấy danh sách sản phẩm và in ra màn hình 
 function init(){

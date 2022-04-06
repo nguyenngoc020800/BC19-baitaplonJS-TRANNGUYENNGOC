@@ -32,7 +32,7 @@
               <option value="all" selected>All</option>
             </select>
           </form>
-            <div class="banner">
+            <div class="banner container-fluid">
                 <!-- Main Cart -->
                 <div id="mainCard" class="main-card container-fluid">
                     <div class="card">
@@ -92,12 +92,28 @@
                 <!-- Cart  -->
                 <div class="cart">
                     <div class="side-nav" id="sideNav">
-                        <button>
-                            <i class="fa fa-times" onclick="closeModal()"></i>
+                        <button style="
+                        position: absolute;
+                        top: 20px;
+                        right: 30px;
+                    " onclick="closeModal()">
+                            <i class="fa fa-times" \></i>
                         </button>
                         <h2>Cart</h2>
                         <div class="cart-items">
                             <span class="empty-cart">Looks You Haven't Added Any Product In The Cart</span>
+                            <table class="table table-dark">
+                               
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
                         </div>
                         <div class="final">
                             <strong>
@@ -135,6 +151,7 @@
     <!-- JS files -->
     <!-- <script src="./JS/_productManager.js"></script> -->
     <script type="module" src="./JS/main.js"></script>
+    <script src="./JS/_layout.js"></script>
 </body>
 
 </html>

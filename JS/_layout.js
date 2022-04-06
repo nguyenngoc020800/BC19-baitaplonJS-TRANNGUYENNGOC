@@ -1,8 +1,8 @@
 // Tạo hàm pop up modal
 document.getElementById('shoppingCart').addEventListener('click', () => {
-    const sideNav = document.getElementById("sideNav");
+    const sideNav = document.querySelector('.cart');
     
-    sideNav.style.right = "0";
+    sideNav.style.right = "-30px";
     const cover = document.getElementById('cover');
     cover.style.display = 'block';
 });
@@ -10,7 +10,7 @@ document.getElementById('shoppingCart').addEventListener('click', () => {
 // Tạo hàm tắt modal
 
 function closeModal () {
-    const sideNav = document.getElementById("sideNav");
+    const sideNav = document.querySelector('.cart');
     sideNav.style.right = "-100%";
     const cover = document.getElementById('cover');
     cover.style.display = 'none';
