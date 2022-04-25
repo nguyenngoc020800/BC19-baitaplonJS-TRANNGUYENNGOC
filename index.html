@@ -84,7 +84,7 @@
                     <button id="shoppingCart">
                         <i class="fas fa-shopping-cart"></i>
                     </button>
-                    <span class="total-qty">0</span>
+                    <span class="total-qty" id="totalNumber">0</span>
                 </div>
                 <div class="cover" id="cover" onclick="closeModal()"></div>
                 <div class="cover purchase-cover"></div>
@@ -118,10 +118,10 @@
                         <div class="final">
                             <strong>
                                 Total: $ 
-                                <span class="total">0</span>
+                                <span class="total" id="total">0</span>
                             </strong>
                             <div class="action">
-                                <button class="btn buy">
+                                <button class="btn buy" id="purchase">
                                     Purchase 
                                     <i class="fas fa-credit-card"></i>
                                 </button>
@@ -138,6 +138,7 @@
                 <!-- Stock Limit -->
                 <div class="stock-limit"></div>
                 <!-- End of Stock Limit -->
+               
             </div>
         </div>
     <!-- Font Awsome -->

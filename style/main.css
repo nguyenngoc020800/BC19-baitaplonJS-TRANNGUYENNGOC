@@ -1,3 +1,5 @@
+
+
 *{
     padding: 0;
     margin:0;
@@ -6,6 +8,7 @@ html>body{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 #app{
     display: flex;
     justify-content: center;
@@ -26,6 +29,11 @@ html>body{
 #typeSelect{
     padding: 10px;
     border-radius: 20px;
+}
+
+strong{
+    color: #fff;
+    font-size: 30px;
 }
 .banner{
     display: flex;
@@ -113,3 +121,24 @@ img.card-img{
 .icon i{
     font-size: 20px;
 }
+
+.changer-number{
+    display: flex;
+    align-items: center;
+    /* display: none; */
+}
+
+.changer-number.cartItem{
+    display: flex;
+}
+
+.changer-number .btn{
+    padding: 5px;
+    line-height: 8px;
+     margin: 0 5px;
+}
+
+.changer-number span{
+    color: #fff;
+}
+
