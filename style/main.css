@@ -14,6 +14,7 @@ html>body{
     min-height: 500px;
     background: linear-gradient(to left, #8942a8, #ba382f);
     position: relative;
+    overflow: hidden;
 }
 
 #filterType{
